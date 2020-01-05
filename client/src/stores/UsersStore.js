@@ -13,6 +13,10 @@ class UsersStore {
             type: 'user',
         },
     ];
+
+    @computed get usersCount() {
+        return this.users.length;
+    }
 }
 
 export default new UsersStore();

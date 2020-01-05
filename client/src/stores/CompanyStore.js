@@ -7,21 +7,21 @@ class CompanyStore {
     constructor() {
         autorun(
             (reaction) => {
-                console.log('autorun');
-                var a = this.companies;
+                console.log(`autorun - ${this.companiesCount}`);
             }
         )
         when(
             () => this.companiesCount === 5,
             () => {
-                debugger
                 console.log('when')
             }
         )
         reaction(
             () => this.companies.length,
             (companiesCount, reaction) => {
-                console.log(`Companies count is ${companiesCount}. The last added company is ${this.companies[companiesCount - 1]}`)
+                if(this.companies[companiesCount - 1]){
+                    console.log(`Companies count is ${companiesCount}. The last added company is ${this.companies[companiesCount - 1].name}`)
+                }
                 if (companiesCount > 2) {
                     reaction.dispose(); // reaction is dispose after companies become more then 2
                 }
