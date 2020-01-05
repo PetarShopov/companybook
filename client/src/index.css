@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#header {
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-left: 40%;
+}
+
+#home {
+  padding-top: 20px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-left: 40%;
+}
+
+#addCompany {
+  float: right;
+  padding: 5px;
+  margin: 10px;
+}
+
+#addCompanyForm {
+  padding: 10px;
+}
